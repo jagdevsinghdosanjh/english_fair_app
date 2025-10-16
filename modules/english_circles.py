@@ -33,7 +33,17 @@ def render():
             "run": "To move quickly on foot.",
             "happy": "Feeling joy or pleasure.",
             "school": "A place where students learn.",
-            "friend": "Someone you care about and trust."
+            "friend": "Someone you care about and trust.",
+            "book": "A set of written pages bound together, often telling a story or sharing knowledge.",
+            "laugh": "To make a joyful sound when something is funny or delightful.",
+            "tree": "A tall plant with a trunk, branches, and leaves that gives shade and oxygen.",
+            "kind": "Showing care and respect for others through words or actions.",
+            "water": "A clear liquid that all living things need to survive.",
+            "play": "To engage in fun activities, often with others.",
+            "light": "Something that helps us see in the dark, like the sun or a lamp.",
+            "home": "A place where you live and feel safe with your family.",
+            "dream": "A series of thoughts or images that come while sleeping—or a hope for the future.",
+            "learn": "To gain new knowledge or skills through study or experience."
         }
         st.write(meanings[word])
 
