@@ -6,7 +6,7 @@ st.sidebar.markdown("---")
 st.sidebar.subheader("🔤 Scrabblet Challenge")
 
 # Define the pool of words to use in the game
-word_pool = ["merge", "realm", "essence", "story", "lamp", "soul", "truth", "fair", "badge", "poetic"]
+word_pool = ["merge", "realm", "essence", "story", "lamp", "soul", "truth", "fair", "badge", "poetic","charismatic"]
 
 # Initialize session state
 if "scrabble_word" not in st.session_state:
