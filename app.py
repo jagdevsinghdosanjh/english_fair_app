@@ -40,6 +40,7 @@ st.markdown("""
     <div class="welcome-banner">
       <h1>🌟 Welcome to the English Fair</h1>
       <p>Where words bloom, stories breathe, and learning becomes celebration.</p>
+      <strong>Gurpreet Kaur - English Mistress GHS Chananke Amritsar</strong>
     </div>
 """, unsafe_allow_html=True)
 
