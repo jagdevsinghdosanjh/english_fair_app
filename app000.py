@@ -1,7 +1,6 @@
 # app.py
 
 import streamlit as st
-import random
 from modules import english_circles, jumbled_words, story_telling
 from parent_corner import guidance
 from utils.helpers import display_badges
@@ -59,37 +58,6 @@ page = st.sidebar.radio("Choose an activity", [
     "Parent Corner"
 ])
 
-# 🎲 Scrabblet Game in Sidebar
-st.sidebar.markdown("---")
-st.sidebar.subheader("🔤 Scrabblet Challenge")
-
-# Word pool
-word_pool = ["merge", "realm", "essence", "story", "lamp", "soul", "truth", "fair", "badge", "poetic"]
-if "scrabble_word" not in st.session_state:
-    selected_word = random.choice(word_pool)
-    st.session_state.scrabble_word = selected_word
-    st.session_state.scrambled = ''.join(random.sample(selected_word, len(selected_word)))
-
-st.sidebar.markdown(f"**Unscramble:** `{st.session_state.scrambled.upper()}`")
-user_guess = st.sidebar.text_input("Your guess:")
-
-if user_guess.lower() == st.session_state.scrabble_word:
-    st.sidebar.success("✅ Correct! Well done.")
-    # Reset for next round
-    new_word = random.choice(word_pool)
-    st.session_state.scrabble_word = new_word
-    st.session_state.scrambled = ''.join(random.sample(new_word, len(new_word)))
-elif user_guess:
-    st.sidebar.error("❌ Try again!")
-
-# Optional score tracker
-if "score" not in st.session_state:
-    st.session_state.score = 0
-if user_guess.lower() == st.session_state.scrabble_word:
-    st.session_state.score += 1
-
-st.sidebar.markdown(f"🏅 Your score: **{st.session_state.score}**")
-
 # Page routing
 if page == "Home":
     st.markdown("## 🧭 Explore the fair using the sidebar.")
@@ -107,3 +75,37 @@ elif page == "Story Telling":
 
 elif page == "Parent Corner":
     guidance.render()
+
+# # app.py
+# import streamlit as st
+# from modules import english_circles, jumbled_words, story_telling, parent_corner
+
+# st.set_page_config(page_title="English Fair App", layout="wide")
+
+# st.sidebar.title("🎪 English Fair Navigation")
+# page = st.sidebar.radio("Choose an activity", [
+#     "Home",
+#     "English Circles",
+#     "Jumbled Words",
+#     "Story Telling",
+#     "Parent Corner"
+# ])
+
+# if page == "Home":
+#     st.title("🌟 Welcome to the English Fair")
+#     st.markdown("""
+#         _Where words dance, stories bloom, and learning becomes celebration._
+#         Explore interactive stalls designed to awaken curiosity and joy in English learning.
+#     """)
+
+# elif page == "English Circles":
+#     english_circles.render()
+
+# elif page == "Jumbled Words":
+#     jumbled_words.render()
+
+# elif page == "Story Telling":
+#     story_telling.render()
+
+# elif page == "Parent Corner":
+#     parent_corner.render()
