@@ -25,7 +25,7 @@ def render():
     """)
 
     st.subheader("🧠 Word of the Circle")
-    word = st.selectbox("Choose a word to explore:", ["apple", "run", "happy", "school", "friend"])
+    word = st.selectbox("Choose a word to explore:", ["apple", "run", "happy", "school", "friend","book","laugh","tree","kind","water","play","light","home","dream","learn"])
     st.write("**Definition**: _(Click to reveal)_")
     with st.expander("Reveal Meaning"):
         meanings = {
