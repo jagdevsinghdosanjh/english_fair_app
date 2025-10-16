@@ -1,0 +1,35 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+env/
+
+# Streamlit config and logs
+.streamlit/
+*.log
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# IDE-specific
+.vscode/
+.idea/
+
+# Jupyter notebooks (if used)
+.ipynb_checkpoints/
+
+# Python environment files
+*.egg-info/
+*.egg
+*.env
+*.venv
+
+# Personal data or secrets
+*.json
+*.csv
+*.db
