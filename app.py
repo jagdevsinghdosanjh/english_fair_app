@@ -35,6 +35,10 @@ st.markdown("""
       font-size: 1.2em;
       color: #004d40;
     }
+    .welcome-banner strong {
+      font-size: 1.2em;
+      color: #004d40;
+    }
     </style>
 
     <div class="welcome-banner">
