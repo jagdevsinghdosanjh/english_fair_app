@@ -25,10 +25,12 @@ def render():
     """)
 
     st.subheader("🧠 Word of the Circle")
-    word = st.selectbox("Choose a word to explore:", ["apple", "run", "happy", "school", "friend","book","laugh","tree","kind","water","play","light","home","dream","learn","fearless"])
+    word = st.selectbox("Choose a word to explore:", ["disciple","discipline","apple", "run", "happy", "school", "friend","book","laugh","tree","kind","water","play","light","home","dream","learn","fearless"])
     st.write("**Definition**: _(Click to reveal)_")
     with st.expander("Reveal Meaning"):
         meanings = {
+            "disciple":"A disciple is one who chooses to walk a path, guided by a teacher, truth, or principle.",
+            "discipline":"Discipline is the structure, the rhythm, the tapasya that shapes the disciple’s journey.",
             "apple": "A sweet fruit often red or green.",
             "run": "To move quickly on foot.",
             "happy": "Feeling joy or pleasure.",

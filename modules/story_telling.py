@@ -34,4 +34,5 @@ def render():
             st.success("Beautiful! Your story brings the prompt to life.")
 
     st.markdown("---")
+    st.markdown("Disciple and Discipline One seeks the light, the other is the lamp. One asks the question, the other is the silence between words. One walks, the other is the path. Together, they become the dance of becoming.")
     st.markdown("🪶 _Every story told here becomes a thread in the tapestry of learning._")
