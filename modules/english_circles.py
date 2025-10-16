@@ -25,7 +25,7 @@ def render():
     """)
 
     st.subheader("🧠 Word of the Circle")
-    word = st.selectbox("Choose a word to explore:", ["apple", "run", "happy", "school", "friend","book","laugh","tree","kind","water","play","light","home","dream","learn"])
+    word = st.selectbox("Choose a word to explore:", ["apple", "run", "happy", "school", "friend","book","laugh","tree","kind","water","play","light","home","dream","learn","fearless"])
     st.write("**Definition**: _(Click to reveal)_")
     with st.expander("Reveal Meaning"):
         meanings = {
@@ -43,7 +43,8 @@ def render():
             "light": "Something that helps us see in the dark, like the sun or a lamp.",
             "home": "A place where you live and feel safe with your family.",
             "dream": "A series of thoughts or images that come while sleeping—or a hope for the future.",
-            "learn": "To gain new knowledge or skills through study or experience."
+            "learn": "To gain new knowledge or skills through study or experience.",
+            "fearless":"No fear of death, no snare of desire, Where the soul is free, there burns Abhay’s fire. With constant wisdom and purity’s grace, Abhay is the lamp that lights every place."
         }
         st.write(meanings[word])
 
